@@ -6,17 +6,29 @@ smartcurrencyconvert uses [OpenExchangeRates APIs](https://openexchangerates.org
 Currently supported conversions.
 
 USD to Bitcoin (Powered by Coindesk via OpenExchangeRates)
+
 USD to BRL
+
 USD to GBP
+
 USD to MXN
+
 USD to EUR
+
 USD to CNY
+
 USD to CAD
+
 USD to RUB
+
 USD to AUD
+
 USD to CHF
+
 USD to XAU (Gold)
+
 USD to XAG (Silver)
+
 USD to ZAR
 
 <h2>Install Instructions</h2>
@@ -38,7 +50,6 @@ We are using the OpenExchangeRates.org API. You can [sign up for free](https://o
 The SmarCurrencyConvert.Py script is provided under the GNU GPL 3.0 License (Provided inside the Git Repo)
 
 ![GNU GPL 3.0](http://www.gnu.org/graphics/gplv3-127x51.png)
-<img src=http://www.gnu.org/graphics/gplv3-127x51.png></img>
 
 <h3> Credits </h3>
 Many Thanks to the following people who helped with Questions, tips and support.
