@@ -43,7 +43,7 @@ Many Thanks to Kenneth Reitz for this awesome module!
 
 
 We are using the OpenExchangeRates.org API. You can [sign up for free](https://openexchangerates.org/signup/free)
-##Before running the script, be sure to copy over your AppID/API Key into the script (open the script up in IDLE or a Text editor such as [Atom](http://atom.io)) and change the api-key ='?app_id=00000000000000000000000000000000' to the AppID key supplied by openexchange.org
+#Before running the script, be sure to copy over your AppID/API Key into the script (open the script up in IDLE or a Text editor such as [Atom](http://atom.io)) and change the api-key ='?app_id=00000000000000000000000000000000' to the AppID key supplied by openexchange.org
 
 
 <h3> License </h3>
