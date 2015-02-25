@@ -230,7 +230,7 @@ while loop:
         print('Converting US Dollars (USD) to Chinese Yuan (CNY)')
         usd = check_input(input('$'))
         result = usd_to_cny(usd)
-        print('${} = ¥ {}'.format(*result))
+        print('${} = CNY {}'.format(*result))
         escape = input('Press any key to return back to the main menu.')
     if choice == 13:
         print('Converting US Dollars (USD) to Swiss Franc (CHF)')
