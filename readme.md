@@ -33,7 +33,7 @@ USD to ZAR
 
 <h2>Install Instructions</h2>
 We created this application with Python 3 in mind. Please download the Python 3 runtime.
-You can download [Python 3 from python.org](python.org).
+You can download [Python 3 from python.org](http://python.org).
 
 
 We used the Python Requests module. You can install Python Requests via PIP by running the following command.
