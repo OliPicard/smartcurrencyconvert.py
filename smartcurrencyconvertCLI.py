@@ -87,7 +87,6 @@ if words == ['u','s','d','x','a','u']:
     input('press [enter] to exit.')
 if words == ['U','S','D','X','A','G']:
     a = result [0]
-    b = dataq[0]
     b = dataq['rates']['XAG']
     c = a * b
     print('=>', c)
