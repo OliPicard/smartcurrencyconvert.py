@@ -1,3 +1,4 @@
+# coding: utf-8
 __author__ = 'OliPicard'
 import math
 import re
@@ -14,7 +15,7 @@ import json.decoder
 
 #Please input your API key before running this script! (It will fail to compile otherwise.)
 
-api_key = '00000000000000000000000000000000000000'#insert your API code here.
+api_key = '00000000000000000000000'#insert your API code here.
 url = 'http://openexchangerates.org/api/latest.json?app_id=' #don't change this unless you know what your doing.
 
 payload = (url + api_key)
@@ -26,6 +27,8 @@ except requests.exceptions.MissingSchema:
     print('It seems the site has been modified. Have you considered checking to see if you have modified the site from https://openexchangerates.org/api/latest.json')
 except requests.exceptions.Timeout:
     print('The API is timing out, please try again later.')
+except requests.exceptions.HTTPError:
+    print('Oh No, A http error has occurred. Double check to see if the API service is online.')
 
 convert=input('')
 
@@ -138,8 +141,66 @@ if words == ['U','S','D','A','U','D']:
     input('press [enter] to exit.')
 if words == ['u','s','d','a','u','d']:
     a = result[0]
-    b = dataq['rates']['aud']
+    b = dataq['rates']['AUD']
     c = a * b
     print('=>',c)
     input('press [enter] to exit')
-
+if words == ['U','S','D','U','G','X']:
+    a = result[0]
+    b = dataq['rates']['UGX']
+    c = a * b
+    print('=>',c)
+    input('press [enter] to exit')
+if words == ['u','s','d','u','g','x']:
+    a = result[0]
+    b = dataq['rates']['UGX']
+    c = a * b
+    print('=>',c)
+    input('press [enter] to exit')
+if words == ['U','S','D','R','U','B']:
+    a = result[0]
+    b = dataq['rates']['RUB']
+    c = a * b
+    print('=>',c)
+    input('press [enter] to exit')
+if words == ['u','s','d','r','u','b']:
+    a = result[0]
+    b = dataq['rates']['RUB']
+    c = a * b
+    print('=>',c)
+    input('press [enter] to exit')
+if words == ['U','S','D','C','N','Y']:
+    a = result[0]
+    b = dataq['rates']['CNY']
+    c = a * b
+    print('=>',c)
+    input('press [enter] to exit')
+if words == ['u','s','d','c','n','y']:
+    a = result[0]
+    b = dataq['rates']['CNY']
+    c = a * b
+    print('=>', c)
+    input('press [enter] to exit')
+if words == ['U','S','D','C','H','F']:
+    a = result[0]
+    b = dataq['rates']['CHF']
+    c = a * b
+    print('=>', c)
+    input('press [enter] to exit')
+if words == ['u','s','d','c','h','f']:
+    a = result[0]
+    b = dataq['rates']['CHF']
+    c = a * b
+    print('=>', c)
+    input('press [enter] to exit')
+if words == ['U','S','D','Z','A','R']:
+    a = result[0]
+    b = dataq['rates']['ZAR']
+    c = a * b
+    print('=>', c)
+    input('press [enter] to exit')
+if words == ['u','s','d','z','a','r']:
+    a = result[0]
+    b = dataq['rates']['ZAR']
+    c = a * b
+    print('=>', c)
