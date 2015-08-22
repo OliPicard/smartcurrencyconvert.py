@@ -7,7 +7,7 @@ import requests
 import requests.exceptions
 import sys
 
-api_key = "?app_id=00000000000000000000000000000000"
+api_key = "?app_id=00000000000000000000000000000000"  # please place your own API key here.
 url = "https://openexchangerates.org/api/latest.json"
 
 
@@ -45,7 +45,9 @@ def reload(resp):
 
 def check():
     menu = 'Press 1 to convert to USD\nPress 2 to convert to GBP.\nPress 3 to convert to CAD.\n'\
-           'Press 4 to convert to ERN\nPress 5 to convert to BTC\nType exit to exit.'
+           'Press 4 to convert to ERN\nPress 5 to convert to BTC\nPress 6 to convert to XUG\n' \
+           'Press 7 to convert to XAG\nPress 8 to convert to MXN\nPress 9 to convert to BRL\n' \
+           'Press 10 to convert to AUD\nPress 11 to convert to UGX\nType exit to exit.'
     a = input(menu)
     question = 'would you like to convert another number? y/n'
     if a == '1':
@@ -71,6 +73,56 @@ def check():
     if a == '5':
         i = showtime()
         t = convert(i, data(currency='BTC'))
+        print(t)
+        reload(input(question))
+    if a == '6':
+        i = showtime()
+        t = convert(i, data(currency='XAU'))
+        print(t)
+        reload(input(question))
+    if a == '7':
+        i = showtime()
+        t = convert(i, data(currency='XAG'))
+        print(t)
+        reload(input(question))
+    if a == '8':
+        i = showtime()
+        t = convert(i, data(currency='MXN'))
+        print(t)
+        reload(input(question))
+    if a == '9':
+        i = showtime()
+        t = convert(i, data(currency='BRL'))
+        print(t)
+        reload(input(question))
+    if a == '10':
+        i = showtime()
+        t = convert(i, data(currency='AUD'))
+        print(t)
+        reload(input(question))
+    if a == '11':
+        i = showtime()
+        t = convert(i, data(currency='UGX'))
+        print(t)
+        reload(input(question))
+    if a == '12':
+        i = showtime()
+        t = convert(i, data(currency='RUB'))
+        print(t)
+        reload(input(question))
+    if a == '13':
+        i = showtime()
+        t = convert(i, data(currency='CNY'))
+        print(t)
+        reload(input(question))
+    if a == '14':
+        i = showtime()
+        t = convert(i, data(currency='CNY'))
+        print(t)
+        reload(input(question))
+    if a == '15':
+        i = showtime()
+        t = convert(i, data(currency='CHF'))
         print(t)
         reload(input(question))
     if a == 'exit':
